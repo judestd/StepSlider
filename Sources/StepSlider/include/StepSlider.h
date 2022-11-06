@@ -38,11 +38,14 @@ IB_DESIGNABLE
  */
 @property (nonatomic) IBInspectable NSUInteger maxCount;
 
+@property (nonatomic) IBInspectable NSUInteger maxPointsCount;
+
 /**
  *  Currnet selected dot index.
  */
 @property (nonatomic) IBInspectable NSUInteger index;
 
+@property (nonatomic) IBInspectable NSUInteger selectedIndex;
 
 /**
  *  Height of the slider track.
@@ -109,7 +112,7 @@ IB_DESIGNABLE
 @property (nonatomic) StepSliderTextOrientation labelOrientation;
 
 /**
- *  If `YES` adjust first and last labels to StepSlider frame. And change alingment to left and right. 
+ *  If `YES` adjust first and last labels to StepSlider frame. And change alingment to left and right.
  *  Otherwise label position is same as trackCircle, and aligment always is center.
  */
 @property (nonatomic) IBInspectable BOOL adjustLabel;
@@ -119,6 +122,9 @@ IB_DESIGNABLE
  *  Default value is `false`.
  */
 @property (nonatomic) IBInspectable BOOL enableHapticFeedback;
+
+
+@property (nonatomic) BOOL sendFromTouch;
 
 
 /**
